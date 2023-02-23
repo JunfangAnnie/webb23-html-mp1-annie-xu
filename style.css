@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap'); /*Importerad typsnitt från Google*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap');
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*Typsnitt som används genom alla sidor*/
+    background-color: #e3e5e4;
+    margin: 0; /*Så det inte blir "gap" mellan header och sidans topp*/
+}
+
+nav ul {
+    font-family: 'Alegreya Sans SC', sans-serif; /*Typsnitt som endast påverkar listorna i navbar*/   
+    display: flex; /*Listan i navbar blir horisontell*/
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem;
+    overflow: hidden;
+}
+
+.pad-top {
+    padding-top: 1.2rem; /*Padding så att navbar går i linje med logon*/
+}
+
+header {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Cinzel', serif; /*Typsnitt som stylar alla h1*/
+    color: #4f423e;
+    font-size: 3rem; /*h1 får en större storlek*/
+}
+
+h2, h3, h4 {
+    font-family: 'Cinzel', serif; /*Typsnitt som stylar alla h2, h3, h4*/
+    color: #4f423e;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*Typsnitt som stylar alla paragrafer*/
+    font-size: 1.1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px; /*Mellanrum på 100px mellan toppen på varje sida & det första elementet*/
+}
+
+section {
+    text-align: center;
+}
+
+.om-mig {
+    width: 40%;
+}
+
+.om-mig img {
+    width: 600px;
+    border-radius: 3rem;
+}
+
+.fakta {
+    box-shadow: 0px 1px 4px 1px #4f423e;
+    background-color: #d0c1b1; /*Bakgrundsfärg till faktaboxen*/
+    width: 15%;
+    height: 100%;
+}
+
+.fakta img { /*Selfie-bilden får en bredd på 200px och blir centrerad i boxen*/
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.3rem; /*Rundar bildens kanter*/
+}
+
+.fakta ul {
+    list-style-type: none;
+}
+
+.h3-fakta {
+    text-align: center;
+}
+
+.socialmedia {
+    width: 25px;
+    padding: 0.7rem 1rem 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    bottom: 0;
+    width: 100%;
+    position: fixed; /*Footern ligger alltid längst ner på sidan*/
+}
+
+.btn {
+    padding: 0 3rem;
+    margin: 0px 20px 0px 20px; /*20px margin på höger & vänster sida av de interna länkarna i navbar*/
+    border-radius: 0.4rem; /*Rundar kanterna på länkarna i navbar*/
+    color: white;
+    text-decoration: none;
+}
+
+.btn1 {
+    padding: 0 3rem;
+    border-radius: 0.4rem;
+    color: #595754;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn1:hover {
+    background-color:#9c9083; /*Ger länkarna en bakgrundsfärg när musen är över samt en bakgrundsfärg för nuvarande sida*/
+    color: white;
+    font-weight: bold;
+}
+
+.active, .btn:hover {
+    background-color:#9c9083; /*Ger länkarna en bakgrundsfärg när musen är över samt en bakgrundsfärg för nuvarande sida*/
+    color: white;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        max-width: 100%;
+        overflow-x: hidden; /*Stoppar en från att kunna scrolla sidleds*/
+    }
+
+    nav ul {
+        flex-direction: column; /*Menyn blir vertikal*/
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 18%;
+    }
+
+    section {
+        margin-left: -10rem;
+    }
+
+    .om-mig {
+        width: 66%;
+    }
+
+    .fakta {
+        width: 66%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .btn1 {
+        padding: 0 1rem;
+    }
+}
