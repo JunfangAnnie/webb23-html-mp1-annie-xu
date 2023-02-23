@@ -40,7 +40,7 @@ p {
     font-size: 1.1rem;
 }
 
-main {
+.wrapper {
     display: flex;
     justify-content: space-evenly;
     padding-top: 100px; /*Mellanrum på 100px mellan toppen på varje sida & det första elementet*/
@@ -134,7 +134,7 @@ footer {
         align-items: center;
     }
 
-    main {
+    .wrapper {
         display: flex;
         flex-direction: column;
         width: 100%;
