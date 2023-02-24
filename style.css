@@ -20,6 +20,10 @@ nav ul {
     padding-top: 1.5rem; /*Padding så att navbar går i linje med logon*/
 }
 
+#logo {
+    width: 200px;
+}
+
 header {
     background-color: black;
 }
@@ -134,7 +138,7 @@ footer {
         align-items: center;
     }
 
-    .wrapper {
+    main {
         display: flex;
         flex-direction: column;
         width: 100%;
